@@ -1,5 +1,5 @@
 # backend/Dockerfile
-FROM golang:1.20-alpine
+FROM golang:1.23-alpine
 
 # Set environment variables
 ENV GO111MODULE=on \
@@ -10,7 +10,7 @@ ENV GO111MODULE=on \
 # Set working directory
 WORKDIR /app
 
-# Copy go.mod and go.sum
+# Copy go.mod dan go.sum
 COPY go.mod go.sum ./
 
 # Download dependencies
